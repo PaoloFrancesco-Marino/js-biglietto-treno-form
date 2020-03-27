@@ -34,6 +34,7 @@ body {
 .wrapper {
     width: 1170px;
     max-width: 100%;
+    padding: 20px;
 }
 
 .wrapper h1 {
@@ -74,6 +75,7 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
     width: 150px;
+    background: #fff;
 }
 
 /* button */
@@ -85,3 +87,28 @@ body {
     border-radius: 20px;
     margin: 0 10px;
 }
+
+
+
+/* responsive  < 576px*/
+
+@media all and (max-width: 576px) {
+    .dati-input .row {
+        display: block;
+    }
+
+    .row label {
+        margin-bottom: 10px;
+    }
+
+    .row .col {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .dati-input .row:last-child {
+        display: flex;
+    }
+}
+
