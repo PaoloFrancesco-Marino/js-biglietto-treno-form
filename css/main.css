@@ -65,12 +65,14 @@ body {
 /* row  input style */
 
 .row label {
+    display: inline-block;
     margin-right: 10px;
     cursor: pointer;
 }
 
 .row select,
 .row input {
+    display: inline-block;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -109,6 +111,24 @@ body {
 
     .dati-input .row:last-child {
         display: flex;
+    }
+}
+
+@media all and (min-width: 577px) and (max-width: 1200px) {
+    .row label {
+        margin-bottom: 10px;
+    }
+
+    .dati-input {
+        display: flex;
+    }
+   
+    .dati-input .row button:first-child {
+        margin-bottom: 10px;
+    }
+
+    .dati-input .row:last-child {
+        flex-direction: column;
     }
 }
 
