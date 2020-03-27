@@ -37,6 +37,11 @@ bottoneGenera.addEventListener('click',
             // 20% sconto
             costoBiglietto -= costoBiglietto * 0.2;
             offerta = 'Sconto minorenne';
+        } else if (fasciaEta == 'under30') {
+            // 30% sconto
+            costoBiglietto -= costoBiglietto * 0.3;
+            offerta = 'Sconto Under 30'
+
         } else if (fasciaEta == 'over65') {
             //40% sconto
             costoBiglietto -= costoBiglietto * 0.4;
