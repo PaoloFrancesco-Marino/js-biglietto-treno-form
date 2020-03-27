@@ -129,12 +129,21 @@ body {
 /* responsive  < 576px*/
 
 @media all and (max-width: 576px) {
+
+    .container {
+        height: 100%;
+    }
     .dati-input .row {
         display: block;
     }
 
     .row label {
         margin-bottom: 10px;
+    }
+
+    .row select, 
+    .row input {
+        width: 100%;
     }
 
     .row .col {
@@ -146,10 +155,17 @@ body {
     .dati-input .row:last-child {
         display: flex;
     }
+
+    /* ticket */
+    #biglietto {
+        flex-direction: column;
+
+    }
 }
 
-@media all and (min-width: 577px) and (max-width: 1200px) {
-    .row label {
+@media all and (min-width: 577px) and (max-width: 768px) {
+    .row label,
+    .dati-input .row button:first-child  {
         margin-bottom: 10px;
     }
 
@@ -157,12 +173,14 @@ body {
         display: flex;
     }
    
-    .dati-input .row button:first-child {
-        margin-bottom: 10px;
-    }
-
     .dati-input .row:last-child {
         flex-direction: column;
     }
 }
 
+@media all and (min-width: 769px) and (max-width: 1024px){
+    .row label,
+    .dati-input .row button:first-child  {
+        margin-bottom: 10px;
+    }
+}
