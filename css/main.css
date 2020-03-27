@@ -1,3 +1,17 @@
+/* general styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* utilities */
 
 .show {
     opacity: 1;
@@ -5,4 +19,69 @@
 
 .hidden {
     opacity: 0;
+}
+
+
+/* container */
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 1170px;
+    max-width: 100%;
+}
+
+.wrapper h1 {
+    margin-bottom: 10px;
+}
+
+
+/* dati-input */
+
+.dati-input .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.dati-input .row:first-child {
+    border: 1px solid #ccc;
+    min-height: 60px;
+    border-radius: 10px;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+.col {
+    margin: 0 10px;
+}
+
+/* row  input style */
+
+.row label {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.row select,
+.row input {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+/* button */
+.btn {
+    background: #a6160a;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    margin: 0 10px;
 }
