@@ -49,6 +49,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 .dati-input .row:first-child {
@@ -88,14 +89,14 @@ body {
     padding: 10px 40px;
     border: none;
     border-radius: 20px;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 /* ticket styles */
 #biglietto {
     display: flex;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto;
     border-bottom: 20px solid #a6160a;
     border-radius: 10px;
     padding: 20px;
@@ -164,8 +165,7 @@ body {
 }
 
 @media all and (min-width: 577px) and (max-width: 768px) {
-    .row label,
-    .dati-input .row button:first-child  {
+    .row label {
         margin-bottom: 10px;
     }
 
@@ -179,8 +179,7 @@ body {
 }
 
 @media all and (min-width: 769px) and (max-width: 1024px){
-    .row label,
-    .dati-input .row button:first-child  {
+    .row label {
         margin-bottom: 10px;
     }
 }
