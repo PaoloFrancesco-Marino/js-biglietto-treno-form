@@ -65,7 +65,7 @@ bottoneGenera.addEventListener('click',
         document.getElementById('costo').innerHTML = costoBiglietto;
 
         // Mostra biglietto
-        container.className = 'show';
+        container.className = container.classList = ' show' + ' ticket-in';
     }   
 );
 
@@ -86,7 +86,7 @@ bottoneAnnulla.addEventListener('click',
         document.getElementById('costo').innerHTML = '';
 
         // rimuovo container biglietto
-        container.className = 'hidden';
+        container.className = container.classList = 'hidden' + ' ticket-out';
     }
 );
 

@@ -103,6 +103,44 @@ body {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,.2);
 }
 
+
+/* animation ticket */
+
+.ticket-in {
+    animation: ticket-in linear .5s;
+}
+
+@keyframes ticket-in {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20%, 0);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .ticket-out {
+    animation: ticket-out linear .5s;
+}
+
+@keyframes ticket-out {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      
+    }
+  
+    to {
+        opacity: 0;
+        transform: translate3d(0, 20%, 0);
+    }
+  }
+  
+
+
 /* qrcode */
 
 .qrcode {
