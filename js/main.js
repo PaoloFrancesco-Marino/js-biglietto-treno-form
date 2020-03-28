@@ -36,16 +36,16 @@ bottoneGenera.addEventListener('click',
         if (fasciaEta == 'minorenne') {
             // 20% sconto
             costoBiglietto -= costoBiglietto * 0.2;
-            offerta = 'Sconto minorenne';
+            offerta = 'Sconto 20%';
         } else if (fasciaEta == 'under30') {
             // 30% sconto
             costoBiglietto -= costoBiglietto * 0.3;
-            offerta = 'Sconto Under 30'
+            offerta = 'Sconto 30%'
 
         } else if (fasciaEta == 'over65') {
             //40% sconto
             costoBiglietto -= costoBiglietto * 0.4;
-            offerta = 'Sconto Over 65';
+            offerta = 'Sconto 40%';
         }
 
         // Controllo dei decimali
@@ -59,6 +59,7 @@ bottoneGenera.addEventListener('click',
 
         // Inseriamo valori nella pagina
         document.getElementById('nome-passeggero').innerHTML = nome;
+        document.getElementById('distanza').innerHTML = kmDaPercorrere + ' Km';
         document.getElementById('offerta-applicata').innerHTML = offerta;
         document.getElementById('carrozza').innerHTML = numCarrozza;
         document.getElementById('codice-cp').innerHTML = codiceCp;
@@ -80,6 +81,7 @@ bottoneAnnulla.addEventListener('click',
 
         // azzeramento valori biglietto
         document.getElementById('nome-passeggero').innerHTML = '';
+        document.getElementById('distanza').innerHTML = '';
         document.getElementById('offerta-applicata').innerHTML = '';
         document.getElementById('carrozza').innerHTML = '';
         document.getElementById('codice-cp').innerHTML = '';
