@@ -30,7 +30,7 @@ bottoneGenera.addEventListener('click',
         // Calcolo biglietto
         var prezzoKm = 0.21;
         var costoBiglietto = prezzoKm * kmDaPercorrere;
-        var offerta = 'Biglietto Standard';
+        var offerta = 'Standard';
 
         // Calcoliamo il costo e l'offerta applicata
         if (fasciaEta == 'minorenne') {
@@ -59,7 +59,6 @@ bottoneGenera.addEventListener('click',
 
         // Inseriamo valori nella pagina
         document.getElementById('nome-passeggero').innerHTML = nome;
-        document.getElementById('distanza').innerHTML = kmDaPercorrere + ' Km';
         document.getElementById('offerta-applicata').innerHTML = offerta;
         document.getElementById('carrozza').innerHTML = numCarrozza;
         document.getElementById('codice-cp').innerHTML = codiceCp;
@@ -81,7 +80,6 @@ bottoneAnnulla.addEventListener('click',
 
         // azzeramento valori biglietto
         document.getElementById('nome-passeggero').innerHTML = '';
-        document.getElementById('distanza').innerHTML = '';
         document.getElementById('offerta-applicata').innerHTML = '';
         document.getElementById('carrozza').innerHTML = '';
         document.getElementById('codice-cp').innerHTML = '';

@@ -195,10 +195,6 @@ body {
     font-size: 16px;
 }
 
-.contenuti {
-    display: flex;
-}
-
 /* nome */
 
 .nome {
@@ -208,8 +204,9 @@ body {
 }
 
 .nome h4 {
-    margin-top: 5px;
-    color:#909699
+    margin: 5px 0;
+    color:#006c67;
+    
 }
 
 .nome h5 {
@@ -224,56 +221,44 @@ body {
 /* offerta */
 
 .offerta {
-    margin-left: 20px;
-    padding: 20px 0 0;
-}
 
-.offerta table {
-    display: flex;
 }
-
 
 .offerta table thead tr th,
 .offerta table tbody tr td {
+    position: relative;
+    text-align: left;
+    padding: 0 20px 0 0;
     margin-bottom: 5px;
 }
 
-
-
-.offerta table thead tr,
-.offerta table tbody tr {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.offerta table thead tr th {
+    padding-left: 10px;
 }
 
-.offerta table thead tr {
-    margin-right: 10px;
-
+.offerta table thead tr th:first-child {
+    padding-left: 0;
 }
 
-.offerta table tbody tr {
-    margin-left: 10px;
-
-}
-
-.offerta table thead {
-    position: relative;
-
-}
-
-.offerta table thead tr::before {
+.offerta table tbody tr td:not(:nth-child(4))::before {
     position: absolute;
     content: '';
-    height: 100%;
+    height: 48px;
     width: 2px;
     right: 0;
-    transform: translateX(100%);
+    transform: translate(100%, -50%);
     background: #006c67;
 }
 
+
+
 .offerta table tbody tr td i {
+    margin-left: 10px;
     color: #006c67;
+}
+
+.offerta table tbody tr td:first-child i {
+    margin-left: 0;
 }
 
 .offerta table tbody tr td span {
@@ -308,8 +293,17 @@ body {
         margin-bottom: 10px;
     }
 
-    .offerta {
-        margin-left: 0;
+    .dati-input .row:last-child {
+        display: flex;
+    }
+        
+    /* ticket */
+    #biglietto {
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 0 20px 0 40px;
     }
 
     .qrcode img {
@@ -324,26 +318,36 @@ body {
         transform: translate(-50%, -50%);
     }
 
-    .dati-input .row:last-child {
-        display: flex;
-    }
-
-    .contenuti {
-        flex-direction: column;
-    }
-
-    .content {
-        padding: 0 40px;
-    }
-
     .offerta table {
+        display: flex;
         padding: 0;
     }
-        
-    /* ticket */
-    #biglietto {
+
+    .offerta table thead tr,
+    .offerta table tbody tr {
+        display: flex;
         flex-direction: column;
     }
+
+    .offerta table thead tr th {
+        padding-left: 0;
+    }
+
+    .offerta table tbody tr td {
+        padding: 0 10px 0 0;
+    }
+
+    .offerta table tbody tr td i,
+    .offerta table tbody tr td:first-child i {
+        margin-left: 10px;
+    }
+
+    .offerta table tbody tr td:not(:nth-child(4))::before {
+        left: 0;
+        transform: translate(-50%, 0);
+    }
+
+    
 }
 
 @media all and (min-width: 577px) and (max-width: 768px) {
@@ -357,6 +361,14 @@ body {
    
     .dati-input .row:last-child {
         flex-direction: column;
+    }
+
+    .content > h4 {
+        margin-top: 5px;
+    }
+
+    .nome {
+        margin-top: 5px;
     }
 }
 
