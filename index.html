@@ -51,53 +51,58 @@
             </div><!-- dati input -->
     
             <section id="biglietto" class="hidden">
-                <div class="qrcode">
-                    <img src="img/qrcode.png" alt="QrCode">
-                    <img src="https://www.trenitalia.com/content/dam/tcom/asset/icon/header-logo/logo-trenitalia.svg" alt="logo treni italia">
+                <div id="ticket">
+                    <div class="qrcode">
+                        <img src="img/qrcode.png" alt="QrCode">
+                        <img src="https://www.trenitalia.com/content/dam/tcom/asset/icon/header-logo/logo-trenitalia.svg" alt="logo treni italia">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Il Tuo biglietto </h2>     
+                        <h4>Dettagli passeggero:</h4>
+                        <div class="contenuti">
+                            <div class="nome">
+                                <h3>Nome e Cognome:</h3>
+                                <h4 id="nome-passeggero"></h4>
+                            </div>
+                            <div class="offerta">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Offerta</th>
+                                            <th>Carrozza</th>
+                                            <th>Codice CP</th>
+                                            <th>Costo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <i class="fas fa-tags"></i>
+                                                <span id="offerta-applicata"></span>
+                                            </td>
+                                            <td>
+                                                <i class="fas fa-train"></i>
+                                                <span id="carrozza"></span>
+                                            </td>
+                                            <td>
+                                                <i class="fas fa-ticket-alt"></i>
+                                                <span id="codice-cp"></span>
+                                            </td>
+                                            <td>
+                                                <i class="fas fa-euro-sign"></i>
+                                                <span id="costo"></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>  
+                    </div><!-- Content -->
+                </div><!-- Biglietto -->
+                <div class="button-paypal">
+                    <a href="https://www.paypal.com/it/home"><img src="img/paypal.png" alt=""> Checkout</a>
                 </div>
-                <div class="content">
-                    <h2 class="title">Il Tuo biglietto </h2>     
-                    <h4>Dettagli passeggero:</h4>
-                    <div class="contenuti">
-                        <div class="nome">
-                            <h3>Nome e Cognome:</h3>
-                            <h4 id="nome-passeggero"></h4>
-                        </div>
-                        <div class="offerta">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Offerta</th>
-                                        <th>Carrozza</th>
-                                        <th>Codice CP</th>
-                                        <th>Costo</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <i class="fas fa-tags"></i>
-                                            <span id="offerta-applicata"></span>
-                                        </td>
-                                        <td>
-                                            <i class="fas fa-train"></i>
-                                            <span id="carrozza"></span>
-                                        </td>
-                                        <td>
-                                            <i class="fas fa-ticket-alt"></i>
-                                            <span id="codice-cp"></span>
-                                        </td>
-                                        <td>
-                                            <i class="fas fa-euro-sign"></i>
-                                            <span id="costo"></span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>  
-                </div><!-- Content -->
-            </section><!-- Biglietto -->
+            </section>
         </div><!-- Wrapper -->
     </div><!-- Container -->
 

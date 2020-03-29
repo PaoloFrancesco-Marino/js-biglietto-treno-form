@@ -108,7 +108,7 @@ body {
 }
 
 /* ticket styles */
-#biglietto {
+#ticket {
     position: relative;
     display: flex;
     max-width: 800px;
@@ -265,6 +265,33 @@ body {
     color: #515151; 
 }
 
+/* button paypal */
+
+.button-paypal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-paypal a {
+    text-decoration: none;
+    background: rgba(255, 196, 57, 1);
+    color: #111;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 60px;
+    border-radius: 20px;
+}
+
+.button-paypal a:hover {
+    background-color: rgba(255, 196, 57, .8);
+}
+
+.button-paypal a img {
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
 
 
 /* responsive  < 576px*/
@@ -298,7 +325,7 @@ body {
     }
         
     /* ticket */
-    #biglietto {
+    #ticket {
         flex-direction: column;
     }
 
