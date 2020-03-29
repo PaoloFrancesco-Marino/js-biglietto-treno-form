@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto Treno</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <!-- Main CSS -->
@@ -21,7 +23,7 @@
                         <label for="nome">Nome e Cognome</label>
                         <input id="nome" type="text" 
                                name="nome"
-                                placeholder="Inserisci il tuo nome"
+                                placeholder="Nome e Cognome"
                         >
                     </div>
                     <div class="col">
@@ -51,9 +53,10 @@
             <section id="biglietto" class="hidden">
                 <div class="qrcode">
                     <img src="img/qrcode.png" alt="QrCode">
+                    <img src="https://www.trenitalia.com/content/dam/tcom/asset/icon/header-logo/logo-trenitalia.svg" alt="logo treni italia">
                 </div>
                 <div class="content">
-                    <h2 class="title">Il Tuo biglietto </h2>
+                    <h2 class="title">Il Tuo biglietto </h2>     
                     <h4>Dettagli passeggero:</h4>
                     <div class="contenuti">
                         <div class="nome">
@@ -74,15 +77,19 @@
                                 <tbody>
                                     <tr>
                                         <td>
+                                            <i class="fas fa-tags"></i>
                                             <span id="offerta-applicata"></span>
                                         </td>
                                         <td>
+                                            <i class="fas fa-train"></i>
                                             <span id="carrozza"></span>
                                         </td>
                                         <td>
+                                            <i class="fas fa-ticket-alt"></i>
                                             <span id="codice-cp"></span>
                                         </td>
                                         <td>
+                                            <i class="fas fa-euro-sign"></i>
                                             <span id="costo"></span>
                                         </td>
                                     </tr>

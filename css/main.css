@@ -29,6 +29,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(#006c67, #c00031);
 }
 
 .wrapper {
@@ -38,7 +39,9 @@ body {
 }
 
 .wrapper h1 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
 }
 
 
@@ -57,6 +60,7 @@ body {
     min-height: 60px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,.2);
+    background: #fff;
 }
 
 .col {
@@ -84,23 +88,36 @@ body {
 
 /* button */
 .btn {
-    background: #a6160a;
-    color: #fff;
+    display: inline-block;
     padding: 10px 40px;
-    border: none;
-    border-radius: 20px;
     margin: 10px;
+	background: linear-gradient(180deg, #ededed, #dfdfdf);
+	border-radius: 6px;
+	border: 1px solid #dcdcdc;
+	cursor:pointer;
+	color:#777;
+	font-size:15px;
+	font-weight:bold;
+    text-shadow:0px 1px 0px #fff;
+    box-shadow:inset 0px 1px 0px 0px #fff;
+}
+
+.btn:active {
+	position:relative;
+	top:1px;
 }
 
 /* ticket styles */
 #biglietto {
+    position: relative;
     display: flex;
     max-width: 800px;
     margin: 0 auto;
-    border-bottom: 20px solid #a6160a;
+    border-bottom: 20px solid #006c67;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,.2);
+    background: #fff;
 }
 
 
@@ -145,7 +162,6 @@ body {
 
 .qrcode {
     flex-basis: 30%;
-    text-align: center;
 }
 
 .qrcode img {
@@ -154,15 +170,22 @@ body {
     
 }
 
+.qrcode img:last-child {
+    position: absolute;
+    width: 100px;
+    right: 20px;
+    top: 20px;
+}
+
 /* content */
 
 .content {
-    padding: 20px 0;
+    padding: 20px 0 0;
 }
 
 .content > h4 {
     margin-top: 10px;
-    color: #515151;
+    color: #909699
 }
 
 
@@ -172,9 +195,47 @@ body {
     font-size: 16px;
 }
 
+.contenuti {
+    display: flex;
+}
+
+/* nome */
+
+.nome {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.nome h4 {
+    margin-top: 5px;
+    color:#909699
+}
+
+.nome h5 {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.nome h5 span {
+    color: #909699
+}
+
+/* offerta */
+
+.offerta {
+    margin-left: 20px;
+    padding: 20px 0 0;
+}
+
 .offerta table {
     display: flex;
-    padding: 20px;
+}
+
+
+.offerta table thead tr th,
+.offerta table tbody tr td {
+    margin-bottom: 5px;
 }
 
 
@@ -196,32 +257,6 @@ body {
 
 }
 
-.contenuti {
-    display: flex;
-}
-
-/* nome */
-
-.nome {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-}
-
-.nome h4 {
-    color:#515151;
-}
-
-.nome h5 {
-    font-size: 16px;
-}
-
-.nome h5 span {
-    color: #515151;
-}
-
-/* offerta */
-
 .offerta table thead {
     position: relative;
 
@@ -234,7 +269,11 @@ body {
     width: 2px;
     right: 0;
     transform: translateX(100%);
-    background: #a6160a;
+    background: #006c67;
+}
+
+.offerta table tbody tr td i {
+    color: #006c67;
 }
 
 .offerta table tbody tr td span {
@@ -267,6 +306,22 @@ body {
         display: flex;
         flex-direction: column;
         margin-bottom: 10px;
+    }
+
+    .offerta {
+        margin-left: 0;
+    }
+
+    .qrcode img {
+        margin-top: 60px;
+    }
+
+    .qrcode img:last-child {
+        position: absolute;
+        width: 200px;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
     }
 
     .dati-input .row:last-child {
