@@ -74,9 +74,10 @@ bottoneGenera.addEventListener('click',
 bottoneAnnulla.addEventListener('click',
     function() {
         // comando annulla reset dei valori form
-        document.getElementById('nome').value = '';
-        document.getElementById('km').value = '';
-        document.getElementById('fascia-eta').value = 'minorenne';
+        // non serve selezionare tutta la variabile anche perchè non ritorna il valore ma basta usare direttamente il document (perchè andiamo gia a cambiare la var della prima funcint, stiamo solo resettando i valori)
+        var nome = document.getElementById('nome').value = '';
+        var kmDaPercorrere = document.getElementById('km').value = '';
+        var fasciaEta = document.getElementById('fascia-eta').value = 'minorenne';
 
         // azzeramento valori biglietto
         document.getElementById('nome-passeggero').innerHTML = '';
